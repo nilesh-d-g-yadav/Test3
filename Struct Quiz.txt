@@ -7,15 +7,6 @@ Each question has one correct answer unless stated otherwise. Try to answer befo
 
 ---
 
-1. What is a struct in C#?
-
-A) A reference type stored on the heap
-B) A value type stored on the stack
-C) A keyword for defining a class
-D) A type of method in C#
-
-✅ Answer: B) A value type stored on the stack
-
 
 ---
 
