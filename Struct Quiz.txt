@@ -10,7 +10,7 @@ Each question has one correct answer unless stated otherwise. Try to answer befo
 
 ---
 
-2. How do you define a struct in C#?
+2. Hofsehgfsw do you define a struct in C#?
 
 A) class MyStruct { }
 B) interface MyStruct { }
