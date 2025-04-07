@@ -1,0 +1,255 @@
+																						C# Structs Quiz
+
+Instructions:
+
+Each question has one correct answer unless stated otherwise. Try to answer before checking the correct answer.
+
+
+---
+
+1. What is a struct in C#?
+
+A) A reference type stored on the heap
+B) A value type stored on the stack
+C) A keyword for defining a class
+D) A type of method in C#
+
+✅ Answer: B) A value type stored on the stack
+
+
+---
+
+2. How do you define a struct in C#?
+
+A) class MyStruct { }
+B) interface MyStruct { }
+C) struct MyStruct { }
+D) enum MyStruct { }
+
+✅ Answer: C) struct MyStruct { }
+
+
+---
+
+3. Which of the following is NOT allowed in a struct?
+
+A) Fields
+B) Methods
+C) Inheritance from a class
+D) Constructors with parameters
+
+✅ Answer: C) Inheritance from a class
+
+
+---
+
+4. Can a struct have a default constructor in C#?
+
+A) Yes, you must define it
+B) No, structs cannot have constructors
+C) Yes, but only if it’s public
+D) No, but C# provides a default constructor automatically
+
+✅ Answer: D) No, but C# provides a default constructor automatically
+
+
+---
+
+5. What is the correct way to declare and initialize a struct instance?
+
+struct Car
+{
+    public string Model;
+    public int Year;
+}
+
+A) Car myCar = new Car();
+B) Car myCar = new Car("Tesla", 2023);
+C) Car myCar; myCar.Model = "Tesla"; myCar.Year = 2023;
+D) Both A and C
+
+✅ Answer: D) Both A and C
+(Option B is incorrect because the struct has no constructor defined.)
+
+
+---
+
+6. What will be the output of the following code?
+
+struct Point
+{
+    public int X;
+    public int Y;
+
+    public Point(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Point p1 = new Point(10, 20);
+        Point p2 = p1;
+        p2.X = 50;
+
+        Console.WriteLine(p1.X);
+    }
+}
+
+A) 10
+B) 50
+C) Compilation error
+D) Undefined behavior
+
+✅ Answer: A) 10
+(Structs are value types, so p2 gets a copy of p1. Changing p2.X does not affect p1.X.)
+
+
+---
+
+7. Can a struct implement an interface?
+
+A) Yes
+B) No
+
+✅ Answer: A) Yes
+
+
+---
+
+8. What happens when you create a struct without initializing it?
+
+A) Compilation error
+B) The compiler assigns default values to all fields
+C) The program crashes at runtime
+D) The fields remain uninitialized and cause an error
+
+✅ Answer: B) The compiler assigns default values to all fields
+
+
+---
+
+9. Which of the following is TRUE about structs in C#?
+
+A) They support inheritance from other structs
+B) They are reference types
+C) They can have methods and properties
+D) They are garbage-collected like classes
+
+✅ Answer: C) They can have methods and properties
+
+
+---
+
+10. What is the main advantage of using a struct instead of a class?
+
+A) Structs provide better security
+B) Structs use less memory because they are stored on the stack
+C) Structs allow multiple inheritance
+D) Structs support automatic garbage collection
+
+✅ Answer: B) Structs use less memory because they are stored on the stack
+
+
+---
+
+11. Can a struct contain a parameterless constructor?
+
+A) Yes, you can define it manually
+B) No, but C# provides a default constructor
+C) Yes, but only with the static keyword
+D) No, structs do not support constructors
+
+✅ Answer: B) No, but C# provides a default constructor
+
+
+---
+
+12. What is the correct way to define a struct with a constructor?
+
+struct Employee
+{
+    public string Name;
+    public int ID;
+
+    // Which constructor definition is correct?
+}
+
+A) public Employee() { Name = "John"; ID = 1; }
+B) public Employee(string name, int id) { Name = name; ID = id; }
+C) private Employee() { Name = "John"; ID = 1; }
+D) structs cannot have constructors
+
+✅ Answer: B) public Employee(string name, int id) { Name = name; ID = id; }
+
+
+---
+
+13. Can a struct have static members?
+
+A) Yes
+B) No
+
+✅ Answer: A) Yes
+
+
+---
+
+14. What will be the output of this program?
+
+struct Box
+{
+    public int Length;
+    public int Width;
+}
+
+class Program
+{
+    static void Main()
+    {
+        Box b1 = new Box();
+        Console.WriteLine(b1.Length + " " + b1.Width);
+    }
+}
+
+A) Compilation error
+B) 0 0
+C) Undefined behavior
+D) null null
+
+✅ Answer: B) 0 0
+(Default values for int fields in a struct are 0.)
+
+
+---
+
+15. When should you prefer a struct over a class?
+
+A) When you need inheritance
+B) When the object is large and frequently modified
+C) When you need better memory performance for small data structures
+D) When you want reference-type behavior
+
+✅ Answer: C) When you need better memory performance for small data structures
+
+
+---
+
+Score Yourself!
+
+15/15 → Struct Master!
+
+12-14 → Great Job!
+
+9-11 → Good, but revise a bit.
+
+5-8 → Needs more practice.
+
+0-4 → Time to learn structs again!
+
+
+Would you like more advanced topics or another quiz?
