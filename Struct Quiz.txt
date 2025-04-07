@@ -1,6 +1,6 @@
 																						C# Structs Quiz
 
-Instructions:
+Instruction:
 
 Each question has one correct answer unless stated otherwise. Try to answer before checking the correct answer.
 
